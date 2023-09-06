@@ -9,7 +9,8 @@ Built with the Next.js App Router, TypeScript & Tailwind
 -   Custom feed for authenticated users
 -   Advanced caching using [Upstash Redis](https://upstash.com/?utm_source=Josh2)
 -   Optimistic updates for a great user experience
--   Modern data fetching using React-Query
+-   Modern data fetching using axios
+-   Search community
 -   A beautiful and highly functional post editor
 -   Image uploads & link previews
 -   Full comment functionality with nested replies
@@ -20,6 +21,7 @@ Built with the Next.js App Router, TypeScript & Tailwind
 To get started with this project, run
 
 ```bash
+git clone  https://github.com/tinhtran12345/breddit-nextjs-v1.git
 
 ```
 
@@ -27,10 +29,13 @@ and copy these .env.example variables into a separate .env file:
 
 ```bash
 DATABASE_URL=
-NEXTAUTH_SECRET=
+AUTH_SECRET=
 
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
+NEXTAUTH_URL=
+
+JWT_SECRET =
 
 UPLOADTHING_SECRET=
 UPLOADTHING_APP_ID=
@@ -40,12 +45,6 @@ REDIS_SECRET=
 ```
 
 and that's all you need to get started!
-
-## Acknowledgements
-
--   [Upstash Redis](https://upstash.com/?utm_source=Josh2) for making this possible
--   [Code with Antonio](https://www.youtube.com/@codewithantonio) for thumbnail design inspiration
--   Shadcn's [Taxonomy respository](https://github.com/shadcn/taxonomy) for showcasing the post editor
 
 ## License
 
